@@ -11,7 +11,7 @@ redirect_from:
 
 Education & Research Experience
 ======
-* Postdoctoral in High Energy Astropysics, Insititue of High Energy Physics, Chinese Academy of Science. (2020-2022)
+* Postdoc at High Energy Astropysics, Insititue of High Energy Physics, Chinese Academy of Science. (2020-2022)
 
 * Ph.D in High Energy Astrophysics, Institute of High Energy Physics, Chinese Academy of Science. (2015-2020)
 
