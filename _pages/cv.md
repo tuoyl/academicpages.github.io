@@ -9,9 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Education & Research Experience
 ======
-* Ph.D in High Energy Astrophysics, Institute of High Energy Physics, Chinese Academy of Science, 2015-2020
+* Postdoctoral in High Energy Astropysics, Insititue of High Energy Physics, Chinese Academy of Science. (2020-2022)
+
+* Ph.D in High Energy Astrophysics, Institute of High Energy Physics, Chinese Academy of Science. (2015-2020)
+
+    thesis title: *Study of the high-energy properties of pulsars observed by Insight-HXMT*
+
+* B.Sc in Mathematics and Physics, Yunnan University, Kunming, China. (2011-2015)
 
 Work experience
 ======
@@ -39,19 +45,19 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
