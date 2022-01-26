@@ -1,9 +1,9 @@
 ---
-title: "Teaching experience 1"
+title: "Undergraduate lab teaching assistants"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
+venue: "University of Chinese Academy of Science"
 date: 2014-01-01
 location: "City, Country"
 ---
