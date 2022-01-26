@@ -9,70 +9,43 @@ Software development using statistical methods or data that observered by instru
 A good deal of my time is spent to develop software and scripts allow astronomers to better analyze and understand the data. The softwares I developed are related to pulsar timing analysis, GRB data analysis (for SVOM/GRM), pipeline and docker container for HXMTDAS.
 
 
-# hxmt_pipeline
+# [hxmt_pipeline](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline)
 
 [![pipeline status](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline/badges/master/pipeline.svg)](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline/-/commits/master)
 [![coverage report](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline/badges/master/coverage.svg)](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline/-/commits/master)
 
-I am a developer of the [hxmt_pipeline](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline) package for generating postestimation quantities of interest from Bayesian models. The package contains functions for producing regression tables, plotting predicted probabilities, calculating first differences, creating coefficient plots, and many other quantities. You can view the [Journal of Open Source Software](https://joss.theoj.org/) article for the package [here](https://doi.org/10.21105/joss.01722).
+I am a developer of the [hxmt_pipeline](https://code.ihep.ac.cn/hxmthsdc/hxmt_pipeline). It is a toolkit wrtten in Python calling the multiple modules in HXMTDAS to perform the data analysis processes. `hxmt_pipeline` is targeted at scientific data analysis by HXMT users and can produce specific products for a variety of data analysis requirements, such as: spectral analysis, timing analysis, phase-resolved spectral analysis, etc.
+I have developed both interactive and command-line approaches to use the tool. An example of executing `hpipeline` in interactive method shown below:
 
-{% include gallery %}
-
-To install the latest release on CRAN:
-
-```r
-install.packages("BayesPostEst")
+```console
+$ hpipeline
+============================================================
+             Running HXMT pipeline (hpipeline)
+Task: hpipeline Version: 1.2.4-25  Release Date: 2022.01.05
+============================================================
 ```
 
-The latest [development version](https://github.com/ShanaScogin/BayesPostEst) on GitHub can be installed with:
+# [HXMTDAS docker container](https://github.com/tuoyl/hxmt_docker)
+I integrated the HXMTDAS software and environment into the [docker container](https://github.com/tuoyl/hxmt_docker) for easy installation. And maintain the docker container for a long time (although not much people use it T_T)
 
-```r
-library(remotes)
-install_github("ShanaScogin/BayesPostEst")
+
+To install the latest release of hxmt_docker:
+
+```console
+docker pull ihepuni/hxmtsoft
 ```
 
-You can try out the `mcmcCoefPlot` function from the package in the interactive R console below:
+# [Pulsar analysis package](https://github.com/tuoyl/tat-pulsar)
+In my Ph.D period, the main topic of my research is timing analysis of pulsars. We study the evolution of the arrival of periodic signal from neutron star from isolated or binary system. The mesurements from the Crab pulsar could be a good indicator to calibrate the timing stability of the instruments, because of the stable timing properties of the pulsar.
+`tat-pulsar` package is developed to perform several timing analysis including:
+- search periodic signal
+- calculate the ToAs (time of arrival) of signal, and the corresponding errors
 
-# RWmisc
-
-[![R build status](https://github.com/jayrobwilliams/RWmisc/workflows/R-CMD-check/badge.svg)](https://github.com/jayrobwilliams/RWmisc/actions)
-[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/RWmisc)](https://CRAN.R-project.org/package=RWmisc)
-[![codecov](https://codecov.io/gh/jayrobwilliams/RWmisc/branch/master/graph/badge.svg)](https://codecov.io/gh/jayrobwilliams/RWmisc)
-
-I've collected convenience functions that I've written to address issues I frequently confront in my work into a personal R package called [RWmisc](https://CRAN.R-project.org/package=RWmisc). It includes functions for:
-
-- Managing multiple different projections for cross-national spatial data
-- Converting latitude-longitude data in archaic forms (degrees, minutes, seconds)
-- Correcting for overlapping polygons when aggregating raster data to polygons
-- My custom minimal ggplot2 theme
-
-![](/images/software/spatial_weighting.png)
-
-To install the latest release on CRAN:
-
-```r
-install.packages("RWmisc")
-```
-
-The latest [development version](https://github.com/jayrobwilliams/RWmisc) on GitHub can be installed with:
-
-```r
-library(remotes)
-install_github("jayrobwilliams/RWmisc")
-```
+the code is used in several publications: 
+1. [GECAM timing calibration paper](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stac085/6507588)
+2. [HXMT timing calibration paper](https://arxiv.org/pdf/2109.04709.pdf)
+3. [4U1901+03 accretiong property study](https://www.sciencedirect.com/sdfe/reader/pii/S2214404820300276/pdf)
 
 # Other resources
 
-I also have a number of other software resources focused on making computation and academic life easier:
-
-- [The template](https://github.com/jayrobwilliams/JobMarket) I use for my academic job market materials
-    - Fill in school/position information in one file and it populates to all statements
-    - Generate summary statistics from teaching evaluations and integrate into statements
-    - Combine multiple teaching evaluations into a single portfolio document
-    - Do all of this programmatically with GNU Make!
-- [The template](https://github.com/jayrobwilliams/UNC-Dissertation-Template) I used for my dissertation
-    - This satisfied the formatting requirements at UNC in 2019
-    - Some tweaking likely required to use at another institution or in the future
-- [Scripts](https://github.com/jayrobwilliams/Teaching) that I use to save time on various teaching-related tasks like grading
-- [Functions](https://github.com/jayrobwilliams/ComputerVision) for extracting still frames from videos and information from images in Python using OpenCV
-- [Compiling OpenCV](/files/html/OpenCV_Install.html) from source for Anaconda virtual environments instead of Homebrew ones or system Python installations
+- [grmtools](https://code.ihep.ac.cn/svom/grm-product): I am currently working on the SVOM/GRM analyasis tools `grmtools`. It is in the processs of development and is expected to be ready in Alpha version by the end of April 2022.

@@ -6,7 +6,9 @@ excerpt: '<b> <span style="color:blue"> Y.L. Tuo </span> </b>, L. Ji, S.S. Tsyga
 date: 2020-08-18
 status: Published in
 venue: '<b>Journal of High Energy Astrophysics</b>, 27, 38'
-paperurl: 'https://www.sciencedirect.com/science/article/pii/S2214404820300276?via%3Dihub'
+paperurl: 'https://www.sciencedirect.com/sdfe/reader/pii/S2214404820300276/pdf'
+link: 'https://www.sciencedirect.com/science/article/pii/S2214404820300276?via%3Dihub'
+github: "https://github.com/tuoyl/tat-pulsar"
 ---
 
 [Download paper here](https://www.sciencedirect.com/sdfe/reader/pii/S2214404820300276/pdf)
